@@ -1,0 +1,13 @@
+{application, rets,
+ [
+  {description, "rets - redis -> ets dumping"},
+  {vsn, "0.3"},
+  {modules, []},
+  {registered, [rets_sup]},
+  {applications, [
+                  kernel,
+                  stdlib
+                 ]},
+  {mod, {rets_app, []}},
+  {env, []}
+ ]}.
